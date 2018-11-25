@@ -1,12 +1,55 @@
 # uf-sprinkle-account-graphs
-A sprinkle for the UserFrosting framework to show visual charts of account information
+This is custom a sprinkle for the UserFrosting![alt text](https://www.userfrosting.com/ "UserFrosting Website") framework to show visual charts of account information.
 
 This sprinkle adds bar and pie charts into the standard Userfrosting administration screens. The charts show up automatically when you click on any of the following adminstration options from the left navigation area:
+
 * Users
 * Activities
 * Roles
 * Permissions
 * Groups
 
-There are several chart options displayed in near the top of each page.
+There are several chart options displayed near the top of each page next to the label "Chart Options" as shown in the partial screenshot below.  (The "none" option has been selected.)
 ![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-none.png "Example Chart Options")
+
+## Sample Screenshots 
+Users Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-bar.png "Example Bar Chart")
+
+Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Bar Chart")
+
+## Installation 
+This sprinkle does not modify your database and can simply be installed by adding a dependency declaration into your app/sprinkles.json![alt text](https://learn.userfrosting.com/sprinkles/community "UserFrosting Sprinkle Documentation") in the standard UserFrosting recommended manner.
+
+### What to add into your composer.json file 
+The example app/sprinkles.json file shown here adds this sprinkle into the require section and then declares it at the bottom of the base section too.
+
+```json
+{
+    "require": {
+        "frankfont/uf-sprinkle-account-graphs" : ">=0.0"
+    },
+    "base": [
+        "core",
+        "account",
+        "admin",
+        "uf-sprinkle-account-graphs"
+    ]
+}
+```
+
+## Standard Configurations 
+The defaults.php declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the defaults.php entries in code.  The values for the app/.env are as follows:
+
+###app/.env example override entries
+SPRINKLE.ACCOUNT_GRAPHS.USERS.DEFAULT.TYPENAME=bar
+SPRINKLE.ACCOUNT_GRAPHS.ACTIVITIES.DEFAULT.TYPENAME=bar
+SPRINKLE.ACCOUNT_GRAPHS.ROLES.DEFAULT.TYPENAME=bar
+SPRINKLE.ACCOUNT_GRAPHS.PERMISSIONS.DEFAULT.TYPENAME=bar
+SPRINKLE.ACCOUNT_GRAPHS.GROUPS.DEFAULT.TYPENAME=bar
+
+In the example above, if you replace bar with none, then by default no chart is displayed.
+
+
+
+
+
