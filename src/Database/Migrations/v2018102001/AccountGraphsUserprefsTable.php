@@ -1,12 +1,12 @@
 <?php
 /*DEPRECATED
-namespace UserFrosting\Sprinkle\AccountGraphs\Database\Migrations\v2018102001;
+namespace UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Database\Migrations\v2018102001;
 
 use UserFrosting\System\Bakery\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 
-use UserFrosting\Sprinkle\AccountGraphs\Database\Models\AccountGraphsUserprefs;
+use UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Database\Models\AccountGraphsUserprefs;
 
 class AccountGraphsUserprefsTable extends Migration
 {

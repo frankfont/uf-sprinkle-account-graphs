@@ -1,8 +1,8 @@
 <?php
 /**
- * US English message token translations for the 'account-graphs' sprinkle.
+ * US English message token translations for the 'uf-sprinkle-account-graphs' sprinkle.
  *
- * @package account-graphs\en_US
+ * @package uf-sprinkle-account-graphs\en_US
  * @author Frank Font
  */
 

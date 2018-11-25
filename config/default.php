@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The default settings for the account-graphs sprinkle.
+ * The default settings for the uf-sprinkle-account-graphs sprinkle.
  */
 return [
         'site' => [

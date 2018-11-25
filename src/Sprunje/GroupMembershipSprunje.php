@@ -1,5 +1,5 @@
 <?php
-namespace UserFrosting\Sprinkle\AccountGraphs\Sprunje;
+namespace UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Sprunje;
 
 use UserFrosting\Sprinkle\Admin\Sprunje\GroupSprunje;
 

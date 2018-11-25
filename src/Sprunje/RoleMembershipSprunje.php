@@ -1,5 +1,5 @@
 <?php
-namespace UserFrosting\Sprinkle\AccountGraphs\Sprunje;
+namespace UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Sprunje;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use UserFrosting\Sprinkle\Core\Facades\Debug;

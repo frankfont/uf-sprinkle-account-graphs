@@ -5,7 +5,7 @@
  * @link      https://github.com/rolefrosting/UserFrosting
  * @license   https://github.com/rolefrosting/UserFrosting/blob/master/licenses/UserFrosting.md (MIT License)
  */
-namespace UserFrosting\Sprinkle\AccountGraphs\Database\Models;
+namespace UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Database\Models;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use UserFrosting\Sprinkle\Core\Database\Models\Model;

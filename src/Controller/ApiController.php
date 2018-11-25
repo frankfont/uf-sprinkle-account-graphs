@@ -1,6 +1,6 @@
 <?php
 
-namespace UserFrosting\Sprinkle\AccountGraphs\Controller;
+namespace UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Controller;
 
 use UserFrosting\Sprinkle\Core\Controller\SimpleController;
 use UserFrosting\Sprinkle\Account\Database\Models\User;
