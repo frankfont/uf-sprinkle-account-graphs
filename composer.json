@@ -1,5 +1,5 @@
 {
-    "name": "frankfont/uf-sprinkle-uf-sprinkle-account-graphs",
+    "name": "frankfont/uf-sprinkle-account-graphs",
     "description": "Visual charts of UserFrosting account information",
     "type": "userfrosting-sprinkle",
     "keywords": ["userfrosting","php","charts","javascript","sprinkle"],
