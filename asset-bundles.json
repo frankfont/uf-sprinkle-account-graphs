@@ -1,0 +1,89 @@
+{
+    "bundle": {
+        "js/bfactg/main": {
+            "scripts": [
+                "vendor/chart.js/dist/Chart.bundle.js",
+                "this-sprinkle/js/color-palette.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "js/bfactg/pages/charts-group-membership": {
+            "scripts": [
+                "this-sprinkle/js/pages/charts-group-membership.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "js/bfactg/pages/charts-role-membership": {
+            "scripts": [
+                "this-sprinkle/js/pages/charts-role-membership.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "js/bfactg/pages/charts-permission-membership": {
+            "scripts": [
+                "this-sprinkle/js/pages/charts-permission-membership.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "js/bfactg/pages/charts-activity-view": {
+            "scripts": [
+                "this-sprinkle/js/pages/charts-activity-view.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "js/bfactg/pages/charts-users-view": {
+            "scripts": [
+                "this-sprinkle/js/pages/charts-users-view.js"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "scripts": "plain"
+                    }
+                }
+            }
+        },
+        "css/bfactg/main": {
+            "styles": [
+                "this-sprinkle/css/custom.css"
+            ],
+            "options": {
+                "result": {
+                    "type": {
+                        "styles": "plain"
+                    }
+                }
+            }
+        }
+    }
+}

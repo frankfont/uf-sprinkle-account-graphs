@@ -1,0 +1,7 @@
+{# Add variables needed by client-side code (Javascript) after all core modules are set. #}
+{% autoescape 'js' %}
+    
+    site["account_graphs"] = {{ site.account_graphs | json_encode(constant('JSON_PRETTY_PRINT')) | raw }}
+    
+    
+{% endautoescape %}

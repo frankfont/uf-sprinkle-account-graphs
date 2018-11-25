@@ -1,0 +1,31 @@
+{
+  "name": "uf-sprinkle-account-graphs",
+  "description": "Visual charts of UserFrosting account information ",
+  "homepage": "https://github.com/frankfont",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Frank Font",
+      "homepage": "room4me.com"
+    }
+  ],
+  "dependencies": {
+    "moment": "^2.17",
+    "chart.js": ">= 2.7.2",
+    "font-awesome": "^4.7"
+    },
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "examples",
+    "demo-resources",
+    "demo",
+    "test",
+    "tests"
+  ]
+}

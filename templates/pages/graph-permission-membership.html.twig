@@ -1,0 +1,50 @@
+{% extends "pages/abstract/default.html.twig" %}
+
+{% block stylesheets_page %}
+    
+    {{ parent() }}
+
+    {{ assets.css('css/bfactg/main') | raw }}
+    
+{% endblock %}
+
+{% set page_active = "membership" %}
+
+{# Overrides blocks in head of base template #}
+{% block page_title %}{{translate("Count of Roles Having Permission")}}{% endblock %}
+
+{% block page_description %}Full page chart of role count per permission{% endblock %}
+
+{% block body_matter %}
+    
+    <div class="account-graph-type-selector">
+        <span>Chart Options: </span>
+        <span id="account-graph-select-bar" class="account-graph-selector account-graph-unselected" title='Click for bar chart of permission membership'><i class="fa fa-bar-chart fa-fw"></i></span>
+        <span id="account-graph-select-pie" class="account-graph-selector account-graph-unselected" title='Click for pie chart of permission membership'><i class="fa fa-pie-chart fa-fw"></i></span>
+    </div>    
+    <div id="account-graph-single1" class="account-graph-single">
+        
+        <canvas id="myChart" width="400" height="200"></canvas>
+    
+    </div>  
+    
+{% endblock %}
+
+{% block scripts_page %}
+    
+    <!-- Javascript configuration -->
+    <script>
+    {% include "pages/partials/graph-config.js.twig" %}
+    </script>
+
+    <script>
+    {% include "pages/partials/page.js.twig" %}
+    </script>
+
+    {{ assets.js('js/bfactg/main') | raw }}
+
+    <!-- Include page-specific JS -->
+    {{ assets.js('js/bfactg/pages/charts-permission-membership') | raw }}
+    
+{% endblock %}
+

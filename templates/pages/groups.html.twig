@@ -1,0 +1,42 @@
+{% extends "@admin/pages/groups.html.twig" %}
+
+{% block stylesheets_page %}
+    
+    {{ parent() }}
+
+    {{ assets.css('css/bfactg/main') | raw }}
+    
+{% endblock %}
+
+{% block body_matter %}
+
+    <div class="account-graph-type-selector">
+        <label>Chart Options: </label>
+        <span id="account-graph-select-none" class="account-graph-selector account-graph-unselected" title='Click to hide chart'><i class="fa fa-stop-circle fa-fw"></i></span>
+        <span id="account-graph-select-bar" class="account-graph-selector account-graph-unselected" title='Click for bar chart of group membership'><i class="fa fa-bar-chart fa-fw"></i></span>
+        <span id="account-graph-select-pie" class="account-graph-selector account-graph-unselected" title='Click for pie chart of group membership'><i class="fa fa-pie-chart fa-fw"></i></span>
+    </div>    
+    <div id="account-graph-single1" class="account-graph-single">
+        
+        <canvas id="myChart" width="400" height="80"></canvas>
+    
+    </div>    
+    
+    {{ parent() }}
+    
+{% endblock %}
+{% block scripts_page %}
+
+    {{ parent() }}
+
+    <!-- Javascript configuration -->
+    <script>
+    {% include "pages/partials/graph-config.js.twig" %}
+    </script>
+
+    {{ assets.js('js/bfactg/main') | raw }}
+
+    <!-- Include page-specific JS -->
+    {{ assets.js('js/bfactg/pages/charts-group-membership') | raw }}
+    
+{% endblock %}

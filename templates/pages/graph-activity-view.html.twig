@@ -1,0 +1,50 @@
+{% extends "pages/abstract/default.html.twig" %}
+
+{% block stylesheets_page %}
+    
+    {{ parent() }}
+
+    {{ assets.css('css/bfactg/main') | raw }}
+    
+{% endblock %}
+
+{% set page_active = "activity-view" %}
+
+{# Overrides blocks in head of base template #}
+{% block page_title %}{{translate("Activity View")}}{% endblock %}
+
+{% block page_description %}Full page activity view chart{% endblock %}
+
+{% block body_matter %}
+    
+    <div class="account-graph-type-selector">
+        <span>Chart Options: </span>
+        <span id="account-graph-select-7day-bar" class="account-graph-selector account-graph-unselected" title='Click for 7 day activity view'>7-day</span>
+        <span id="account-graph-select-30day-bar" class="account-graph-selector account-graph-unselected" title='Click for 30 day activity view'>30-day</span>
+        <span id="account-graph-select-100day-bar" class="account-graph-selector account-graph-unselected" title='Click for 100 day activity view'>100-day</span>
+    </div>    
+    <div id="account-graph-single1" class="account-graph-single">
+        
+        <canvas id="myChart" width="400" height="200"></canvas>
+    
+    </div>  
+    
+{% endblock %}
+
+{% block scripts_page %}
+    <!-- Javascript configuration -->
+    <script>
+    {% include "pages/partials/graph-config.js.twig" %}
+    </script>
+    
+    <script>
+    {% include "pages/partials/page.js.twig" %}
+    </script>
+
+    {{ assets.js('js/bfactg/main') | raw }}
+
+    <!-- Include page-specific JS -->
+    {{ assets.js('js/bfactg/pages/charts-activity-view') | raw }}
+
+{% endblock %}
+

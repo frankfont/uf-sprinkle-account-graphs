@@ -1,0 +1,28 @@
+---
+chart_groups:
+  validators:
+    length:
+      label: "&PREF_CHART_GROUPS"
+      min: 1
+      max: 20
+      message: VALIDATE.LENGTH_RANGE
+  transformations:
+  - trim
+chart_roles:
+  validators:
+    length:
+      label: "&PREF_CHART_ROLES"
+      min: 1
+      max: 20
+      message: VALIDATE.LENGTH_RANGE
+  transformations:
+  - trim
+chart_permissions:
+  validators:
+    length:
+      label: "&PREF_CHART_PERMISSIONS"
+      min: 1
+      max: 20
+      message: VALIDATE.LENGTH_RANGE
+  transformations:
+  - trim

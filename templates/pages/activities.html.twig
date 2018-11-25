@@ -1,0 +1,43 @@
+{% extends "@admin/pages/activities.html.twig" %}
+
+{% block stylesheets_page %}
+    
+    {{ parent() }}
+
+    {{ assets.css('css/bfactg/main') | raw }}
+    
+{% endblock %}
+
+{% block body_matter %}
+
+    <div class="account-graph-type-selector">
+        <label>Chart Options: </label>
+        <span id="account-graph-select-none" class="account-graph-selector account-graph-unselected" title='Click to hide chart'><i class="fa fa-stop-circle fa-fw"></i></span>
+        <span id="account-graph-select-7day-bar" class="account-graph-selector account-graph-unselected" title='Click for 7 day chart'>7-day</span>
+        <span id="account-graph-select-30day-bar" class="account-graph-selector account-graph-unselected" title='Click for 30 day chart'>30-day</span>
+        <span id="account-graph-select-100day-bar" class="account-graph-selector account-graph-unselected" title='Click for 100 day chart'>100-day</span>
+    </div>    
+    <div id="account-graph-single1" class="account-graph-single">
+        
+        <canvas id="myChart" width="400" height="80"></canvas>
+    
+    </div>  
+    
+    {{ parent() }}
+    
+{% endblock %}
+{% block scripts_page %}
+
+    {{ parent() }}
+
+    <!-- Javascript configuration -->
+    <script>
+    {% include "pages/partials/graph-config.js.twig" %}
+    </script>
+            
+    {{ assets.js('js/bfactg/main') | raw }}
+
+    <!-- Include page-specific JS -->
+    {{ assets.js('js/bfactg/pages/charts-activity-view') | raw }}
+
+{% endblock %}
