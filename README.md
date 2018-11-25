@@ -1,5 +1,5 @@
 # uf-sprinkle-account-graphs
-This is custom a sprinkle for the UserFrosting![alt text](https://www.userfrosting.com/ "UserFrosting Website") framework to show visual charts of account information.
+This is custom a sprinkle for the [UserFrosting](https://www.userfrosting.com/ "UserFrosting Website") framework to show visual charts of account information.
 
 This sprinkle adds bar and pie charts into the standard Userfrosting administration screens. The charts show up automatically when you click on any of the following adminstration options from the left navigation area:
 
@@ -18,9 +18,9 @@ Users Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-gra
 Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Bar Chart")
 
 ## Installation 
-This sprinkle does not modify your database and can simply be installed by adding a dependency declaration into your app/sprinkles.json![alt text](https://learn.userfrosting.com/sprinkles/community "UserFrosting Sprinkle Documentation") in the standard UserFrosting recommended manner.
+This sprinkle does not modify your database and can simply be installed by adding a dependency declaration into your [app/sprinkles.json](https://learn.userfrosting.com/sprinkles/community "UserFrosting Sprinkle Documentation") in the standard UserFrosting recommended manner.
 
-### What to add into your composer.json file 
+### What to add into your sprinkles.json file 
 The example app/sprinkles.json file shown here adds this sprinkle into the require section and then declares it at the bottom of the base section too.
 
 ```json
@@ -40,7 +40,7 @@ The example app/sprinkles.json file shown here adds this sprinkle into the requi
 ## Standard Configurations 
 The defaults.php declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the defaults.php entries in code.  The values for the app/.env are as follows:
 
-###app/.env example override entries
+### app/.env example override entries
 SPRINKLE.ACCOUNT_GRAPHS.USERS.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.ACTIVITIES.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.ROLES.DEFAULT.TYPENAME=bar
