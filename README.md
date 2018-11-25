@@ -9,5 +9,4 @@ This sprinkle adds bar and pie charts into the standard Userfrosting administrat
 * Groups
 
 There are several chart options displayed in near the top of each page.
-![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/docs/images/screenshots/s-users-none.png "Example Chart Options")
-
+![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-none.png "Example Chart Options")
