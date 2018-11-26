@@ -17,7 +17,7 @@ Users Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-gra
 
 Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Pie Chart")
 
-Activities Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-activities-bar.png "Example Bar Chart")
+Activities Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-activities-bar-7 "Example 7 Day Bar Chart")
 
 Roles Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-roles-bar.png "Example Bar Chart")
 
@@ -45,7 +45,11 @@ The example app/sprinkles.json file shown here adds this sprinkle into the requi
 }
 ```
 
-Run the "composer update" command to from your docroot for the sprinkle to download and install.
+### Important Step: Apply your sprinkles.json File Updates
+The sprinkle is downloaded and installed when you run the following command from your UserFrosting docroot:
+```
+composer update
+```
 
 ## Standard Configurations 
 The defaults.php declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the defaults.php entries in code.  The values for the app/.env are as follows:
