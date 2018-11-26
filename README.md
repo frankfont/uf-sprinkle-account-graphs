@@ -42,14 +42,14 @@ The defaults.php declares the default chart shown for each page.  You can overri
 
 ### app/.env example override entries
 
-#Declare type of chart (none, bar, pie)
+#### Declare type of chart (none, bar, pie)
 SPRINKLE.ACCOUNT_GRAPHS.USERS.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.ACTIVITIES.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.ROLES.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.PERMISSIONS.DEFAULT.TYPENAME=bar
 SPRINKLE.ACCOUNT_GRAPHS.GROUPS.DEFAULT.TYPENAME=bar
 
-#Declare alpha values for color palette [>0,<=1]
+#### Declare alpha values for color palette [>0,<=1]
 SPRINKLE.ACCOUNT_GRAPHS.COLORS.DEFAULT.FILL.LIGHT_ALPHA=.2
 SPRINKLE.ACCOUNT_GRAPHS.COLORS.DEFAULT.FILL.MEDIUM_ALPHA=.5
 
