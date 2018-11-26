@@ -13,12 +13,13 @@ $(document).ready(function()
      */
     function getChartData(labels_ar, data_ar)
     {
+        var alpha = site.account_graphs.colors.default.fill.medium_alpha;
         return {
             'labels': labels_ar,
             'datasets': [{
                 'label': '# of Roles',
                 'data': data_ar,
-                'backgroundColor': mycolors().getColorPalette(data_ar.length,.2),
+                'backgroundColor': mycolors().getColorPalette(data_ar.length,alpha),
                 'borderColor': mycolors().getColorPalette(data_ar.length,1),
                 'borderWidth': 1
             }]

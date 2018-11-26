@@ -6,6 +6,14 @@
 return [
         'site' => [
             'account_graphs' => [
+                'colors' => [
+                    'default' => [
+                        'fill' => [
+                            'light_alpha' => getenv('SPRINKLE.ACCOUNT_GRAPHS.COLORS.DEFAULT.FILL.LIGHT_ALPHA') ?: .2,
+                            'medium_alpha' => getenv('SPRINKLE.ACCOUNT_GRAPHS.COLORS.DEFAULT.FILL.MEDIUM_ALPHA') ?: .4
+                        ]
+                    ]
+                ],
                 'users' => [
                     'default' => [
                         'typename' => getenv('SPRINKLE.ACCOUNT_GRAPHS.USERS.DEFAULT.TYPENAME') ?: 'bar',

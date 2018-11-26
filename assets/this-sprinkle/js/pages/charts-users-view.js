@@ -110,11 +110,12 @@ $(document).ready(function()
      */
     function getStackedChartData(labels_ar, dataset_ar)
     {
+        var alpha = site.account_graphs.colors.default.fill.medium_alpha;
         var datasets = dataset_ar.map(function(item, i){
             return {
                 'label': item.label,
                 'data': item.data,
-                'backgroundColor': mycolors().getOneColorFromPalette(i,.2),
+                'backgroundColor': mycolors().getOneColorFromPalette(i,alpha),
                 //'borderColor': mycolors().getOneColorFromPalette(i,1),
                 'borderWidth': 1
             };
