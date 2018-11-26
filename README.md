@@ -15,7 +15,15 @@ There are several chart options displayed near the top of each page next to the 
 ## Sample Screenshots 
 Users Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-bar.png "Example Bar Chart")
 
-Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Bar Chart")
+Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Pie Chart")
+
+Activities Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-activities-bar.png "Example Bar Chart")
+
+Roles Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-roles-bar.png "Example Bar Chart")
+
+Permissions Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-permissions-bar.png "Example Bar Chart")
+
+Groups Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-groups-bar.png "Example Bar Chart")
 
 ## Installation 
 This sprinkle does not modify your database and can simply be installed by adding a dependency declaration into your [app/sprinkles.json](https://learn.userfrosting.com/sprinkles/community "UserFrosting Sprinkle Documentation") in the standard UserFrosting recommended manner.
@@ -36,6 +44,8 @@ The example app/sprinkles.json file shown here adds this sprinkle into the requi
     ]
 }
 ```
+
+Run the "composer update" command to from your docroot for the sprinkle to download and install.
 
 ## Standard Configurations 
 The defaults.php declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the defaults.php entries in code.  The values for the app/.env are as follows:
