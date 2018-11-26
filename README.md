@@ -17,7 +17,7 @@ Users Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-gra
 
 Users Pie Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-users-pie.png "Example Pie Chart")
 
-Activities Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-activities-bar-7 "Example 7 Day Bar Chart")
+Activities Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-activities-bar-7.png "Example 7 Day Bar Chart")
 
 Roles Bar Chart:![alt text](https://github.com/frankfont/uf-sprinkle-account-graphs/blob/master/docs/images/screenshots/s-roles-bar.png "Example Bar Chart")
 
