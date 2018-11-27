@@ -1,7 +1,7 @@
 # uf-sprinkle-account-graphs
 This is a custom sprinkle for the [UserFrosting](https://www.userfrosting.com/ "UserFrosting Website") framework to show visual charts of account information.  (A "sprinkle" is a UserFrosting plugin/module.) 
 
-This sprinkle adds bar and pie charts into the standard UserFrosting administration screens. The charts show up automatically when you click on any of the following adminstration options from the left navigation area:
+This sprinkle adds bar and pie charts into the standard UserFrosting administration screens. The charts show up automatically when you click on any of the following administration options from the left navigation area:
 
 * Users
 * Activities
