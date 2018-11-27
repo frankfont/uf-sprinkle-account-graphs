@@ -126,7 +126,8 @@ $(document).ready(function()
                         stacked: true,
                     }],
                     yAxes: [{
-                        stacked: true
+                        stacked: true,
+                        stepSize: 1
                     }]
                 }
             }

@@ -3,7 +3,8 @@
         "js/bfactg/main": {
             "scripts": [
                 "vendor/chart.js/dist/Chart.bundle.js",
-                "this-sprinkle/js/color-palette.js"
+                "this-sprinkle/js/color-palette.js",
+                "this-sprinkle/js/color-engine.js"
             ],
             "options": {
                 "result": {

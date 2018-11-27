@@ -298,10 +298,11 @@ $(document).ready(function()
             setCustomTooltips(false);
             scales = {
                     xAxes: [{
-                        stacked: true,
+                        stacked: true
                     }],
                     yAxes: [{
-                        stacked: true
+                        stacked: true,
+                        stepSize: 1
                     }]
                 };
             
