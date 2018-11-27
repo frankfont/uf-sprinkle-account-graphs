@@ -52,7 +52,7 @@ composer update
 ```
 
 ## Standard Configurations 
-The defaults.php declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the defaults.php entries in code.  The values for the app/.env are as follows:
+The *default.php* declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the default.php entries in code.  The values for the app/.env are as follows:
 
 ### app/.env example override entries
 
