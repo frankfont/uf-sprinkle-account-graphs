@@ -51,6 +51,11 @@ The sprinkle is downloaded and installed when you run the following command from
 composer update
 ```
 
+After the update, you probably also need to run this UserFrosting command so that the assets get deployed ...
+```
+php bakery build-assets
+```
+
 ## Standard Configurations 
 The *default.php* declares the default chart shown for each page.  You can override these values with a app/.env file or by overriding the default.php entries in code.  The values for the app/.env are as follows:
 

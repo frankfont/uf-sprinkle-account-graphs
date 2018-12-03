@@ -1,0 +1,8 @@
+{
+    "name": "Sprinkle-Account-Graphs",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "webadmin",
+    "contributors": [],
+    "dependencies": {}
+}
