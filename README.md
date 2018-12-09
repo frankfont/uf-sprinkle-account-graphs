@@ -74,3 +74,11 @@ SPRINKLE.ACCOUNT_GRAPHS.COLORS.DEFAULT.FILL.MEDIUM_ALPHA=.5
 
 In the example above, if you replace bar with none, then by default no chart is displayed.
 
+## Additional Pages
+This sprinkle also makes available full size charts at the following URLs of your site.
+
+* /graph/group/memberships
+* /graph/role/memberships
+* /graph/permission/memberships
+* /graph/activity/view
+
