@@ -81,4 +81,5 @@ This sprinkle also makes available full size charts at the following URLs of you
 * /graph/role/memberships
 * /graph/permission/memberships
 * /graph/activity/view
+* /graph/users/view
 
