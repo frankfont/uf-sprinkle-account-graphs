@@ -1,0 +1,50 @@
+{% extends "pages/abstract/default.html.twig" %}
+
+{% block stylesheets_page %}
+    
+    {{ parent() }}
+
+    {{ assets.css('css/bfactg/main') | raw }}
+    
+{% endblock %}
+
+{% set page_active = "users-view" %}
+
+{# Overrides blocks in head of base template #}
+{% block page_title %}{{translate("Users View")}}{% endblock %}
+
+{% block page_description %}Full page activity view chart{% endblock %}
+
+{% block body_matter %}
+    
+    <div class="account-graph-type-selector">
+        <label>Chart Options: </label>
+        <span id="account-graph-select-none" class="account-graph-selector account-graph-unselected" title='Click to hide chart'><i class="fa fa-stop-circle fa-fw"></i></span>
+        <span id="account-graph-select-7day-bar" class="account-graph-selector account-graph-unselected" title='Click for 7 day bar chart of user activity'><i class="fa fa-bar-chart fa-fw"></i></span>
+        <span id="account-graph-select-7day-pie" class="account-graph-selector account-graph-unselected" title='Click for 7 day pie chart of user activity'><i class="fa fa-pie-chart fa-fw"></i></span>
+    </div>   
+    <div id="account-graph-single1" class="account-graph-single">
+        
+        <canvas id="myChart" width="400" height="200"></canvas>
+    
+    </div>  
+    
+{% endblock %}
+
+{% block scripts_page %}
+    <!-- Javascript configuration -->
+    <script>
+    {% include "pages/partials/graph-config.js.twig" %}
+    </script>
+    
+    <script>
+    {% include "pages/partials/page.js.twig" %}
+    </script>
+
+    {{ assets.js('js/bfactg/main') | raw }}
+
+    <!-- Include page-specific JS -->
+    {{ assets.js('js/bfactg/pages/charts-users-view') | raw }}
+
+{% endblock %}
+
