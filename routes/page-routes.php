@@ -12,4 +12,6 @@ $app->get('/graph/permission/memberships', 'UserFrosting\Sprinkle\UfSprinkleAcco
 $app->get('/graph/activity/view', 'UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Controller\PageController:pageGraphActivityView')
     ->add('authGuard');
 
+$app->get('/graph/users/view', 'UserFrosting\Sprinkle\UfSprinkleAccountGraphs\Controller\PageController:pageGraphUsersView')
+    ->add('authGuard');
 
