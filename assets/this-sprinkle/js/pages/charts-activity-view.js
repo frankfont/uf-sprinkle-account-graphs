@@ -164,7 +164,7 @@ $(document).ready(function()
             $("#myChart").show("slow");
             
             //Draw the chart from data query result now
-            var dataUrl = '/api/graph/activity/view';
+            var dataUrl = site.uri.public + '/api/graph/activity/view';
             $.ajax( dataUrl )
                 .done(function( data ) 
                 {

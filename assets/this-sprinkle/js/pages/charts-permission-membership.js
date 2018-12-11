@@ -106,7 +106,7 @@ $(document).ready(function()
             $("#myChart").show("slow");
             
             //Draw the chart from data query result now
-            var dataUrl = '/api/graph/permission/memberships';
+            var dataUrl = site.uri.public + '/api/graph/permission/memberships';
             $.ajax( dataUrl )
                 .done(function( data ) 
                 {
