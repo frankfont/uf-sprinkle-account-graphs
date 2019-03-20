@@ -27,7 +27,7 @@ class PermissionMembershipSprunje extends Sprunje
 
         $query = $instance->newQuery();
 
-        $query->join('permissions', function ($join) use ($permissionId) 
+        $query->join('permissions', function ($join)
         {
             $join->on('permission_roles.permission_id', 'permissions.id');
         });
