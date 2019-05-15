@@ -32,7 +32,7 @@ class UsersActivitySummaryViewSprunje extends ActivitySprunje
         $instance = $this->classMapper->createInstance('activity');
         $query = $instance->newQuery();
         
-        $query->join('users', function ($join) use ($userId) 
+        $query->join('users', function ($join)
         {
             $join->on('users.id', 'activities.user_id');
         });

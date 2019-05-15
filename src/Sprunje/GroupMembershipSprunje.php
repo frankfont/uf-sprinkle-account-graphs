@@ -30,7 +30,7 @@ class GroupMembershipSprunje extends GroupSprunje
         $query->select('group_id', 'groups.name', Capsule::raw('COUNT(users.id) as member_count'))
             ->groupBy('group_id','groups.name');
  
-        $query->join('groups', function ($join) use ($groupId) 
+        $query->join('groups', function ($join)
         {
             $join->on('users.group_id', 'groups.id');
         });
