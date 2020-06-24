@@ -32,15 +32,17 @@ class UsersActivitySummaryViewSprunje extends ActivitySprunje
         $instance = $this->classMapper->createInstance('activity');
         $query = $instance->newQuery();
         
-        $query->join('users', function ($join)
+        $query->join('users', function ($join) use ($userId) 
         {
             $join->on('users.id', 'activities.user_id');
         });
                 
         $query->select('activities.user_id', 'users.user_name', 'activities.type', Capsule::raw('COUNT(activities.id) as the_count'))
             ->groupBy('users.user_name', 'activities.user_id', 'activities.type');
-        $query->orderBy('users.user_name', 'activities.user_id', 'activities.type');
         $query->where(Capsule::raw("DATE(activities.occurred_at)"),">=",$date7DaysAgo);
+        $query->orderBy('users.user_name', 'asc');
+        $query->orderBy('activities.user_id', 'asc');
+        $query->orderBy('activities.type','asc');
 
         error_log("LOOK DEBUG sql stuff " . $query->toSql());
         

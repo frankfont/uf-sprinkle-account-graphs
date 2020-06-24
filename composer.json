@@ -2,7 +2,13 @@
     "name": "frankfont/uf-sprinkle-account-graphs",
     "description": "Visual charts of UserFrosting account information",
     "type": "userfrosting-sprinkle",
-    "keywords": ["userfrosting","php","charts","javascript","sprinkle"],
+    "keywords": [
+        "userfrosting",
+        "php",
+        "charts",
+        "javascript",
+        "sprinkle"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +20,7 @@
     ],
     "require": {
         "php": ">=7.0.0"
-    },    
+    },
     "autoload": {
         "psr-4": {
             "UserFrosting\\Sprinkle\\UfSprinkleAccountGraphs\\": "src/"

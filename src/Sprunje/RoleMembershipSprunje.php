@@ -27,7 +27,7 @@ class RoleMembershipSprunje extends Sprunje
 
         $query = $instance->newQuery();
 
-        $query->join('roles', function ($join)
+        $query->join('roles', function ($join) use ($roleId) 
         {
             $join->on('role_users.role_id', 'roles.id');
         });

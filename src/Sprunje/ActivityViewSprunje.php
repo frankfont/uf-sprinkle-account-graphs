@@ -28,7 +28,8 @@ class ActivityViewSprunje extends ActivitySprunje
         $query = $instance->newQuery();
         $query->select(Capsule::raw('DATE(activities.occurred_at) as the_date'), 'activities.type', Capsule::raw('COUNT(activities.user_id) as the_count'))
             ->groupBy(Capsule::raw('DATE(activities.occurred_at)'), 'activities.type');
-        $query->orderBy(Capsule::raw('DATE(activities.occurred_at)'),'activities.type');
+        $query->orderBy(Capsule::raw('DATE(activities.occurred_at)'),'asc');
+        $query->orderBy('activities.type','asc');
 
         error_log("LOOK DEBUG sql stuff " . $query->toSql());
         
